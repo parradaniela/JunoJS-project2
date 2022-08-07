@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Mouse Memoirs and Open Sans fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Mouse+Memoirs&family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <!-- stylesheet -->
+    <link rel="stylesheet" href="./styles.css">
+    <title>Daniela Parra Project 2</title>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="form-display">
+            <header>
+                <h1>Pokémon Type Lookup</h1>
+                <h2>Use the search field below to look up different pokemon types, and see which pokemon have that typing.</h2>
+            </header>
+        
+            <main>
+                <form action="#" method="GET" name="search-form">
+                    <label for="type-search">Search for a Pokemon type:</label>
+                    <input type="text" id="type-search" name="search-form" placeholder="ex: fire">
+                    <aside><p>If you're not sure, try one of these: Fire, Water, Rock, Dragon, Electric, Fairy.</p></aside>
+                    <button type="submit" class="submit-type">Submit</button>
+                </form>
+            </main>
+        </div>
+        <section class="list-display">
+            <div class="list-heading"></div>
+            <ul class="results-container">
+        </section>
+        <footer>
+            <p>Pokemon data courtesy of <a href="https://pokeapi.co/">PokéApi</a>.</p>
+            <p>Created at <a href="https://junocollege.com/">Juno College of Technology</a>.</p>
+        </footer>
+        <script src='https://code.jquery.com/jquery-3.4.0.min.js' integrity='sha256-BJeo0qm959uMBGb65z40ejJYGSgR7REI4+CW1fNKwOg=' crossorigin='anonymous'></script>
+        <script src="./app.js"></script>
+    </div>
+</body>
+</html>
