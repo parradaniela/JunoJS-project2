@@ -16,7 +16,7 @@ pokeApp.getType = () => {
   });
 };
 
-//Method that calls the API with a variable for the URL. The pokeApi stores information across different URLS, requiring several calls, so I created one "general purpose" method to do this - could you let me know if this is a good or bad practice? :) Thank you.
+//Method that calls the API with a variable for the URL
 
 pokeApp.callApi = (url) => {
   const apiResponse = $.ajax({
@@ -111,10 +111,4 @@ $(function () {
   pokeApp.init();
 });
 
-// Thank you for looking through my first attempt at making API calls with jQuery :) Unfortunately some Pokemon are missing sprites in the source data, so they will show up with a broken image instead of a sprite. 
-
-//I was hoping to ask one more question if that's OK!
-
-//Up in the pokeApp.matchType() method, I wanted to set up a conditional statement so that if the user enters something that doesn't match any of the pokemon types, it would append different text to the H2 (something like `${userSelection} is not a pokemon type, please try again`). I gravitated to doing this in an IF {} ELSE {} statement, however the IF statement is inside of a .forEach() loop, so when I tried adding an ELSE statement, it would append the error several times over since it was checking the input against every single pokemon type. When I tried moving the IF statement outside of the .forEach() loop, I couldn't figure out a way to make it match the input to the pokemon type correctly, since I need to check the .name property of every Object stored in the array.
-
-// If you have any ideas I'd love to hear them! But if it's too much trouble then that's totally OK too :) Thank you again!
+// Thank you for looking through my first attempt at making API calls with jQuery :)
