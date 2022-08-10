@@ -6,14 +6,10 @@ html { box-sizing: border-box;}
 
 .sr-only { position: absolute; width: 1px; height: 1px; margin: -1px; border: 0; padding: 0; white-space: nowrap; clip-path: inset(100%); clip: rect(0 0 0 0); overflow: hidden;}
 
+/* end setup snippet */
+
 html {
     font-size: 125%;
-}
-
-.wrapper {
-    max-width: 1440px;
-    width: 85%;
-    margin: 0 auto;
 }
 
 /* stripping styles */
@@ -52,6 +48,11 @@ body {
     background: #E4D1B9;
 }
 
+.wrapper {
+    max-width: 1440px;
+    width: 85%;
+    margin: 0 auto;
+}
 
 h1 {
     padding: 20px 0;
@@ -62,42 +63,6 @@ h2 {
     font-size: 1.8rem;
 }
 
-ul, 
-li {
-    display: flex;
-    flex-wrap: wrap;
-}
-
-ul {
-    justify-content: flex-start;
-
-}
-
-img {
-    height: 50px;
-    width: 50px;
-    object-fit: contain;
-    margin: 0 5px;
-}
-
-li {
-    background: #FFF3E4;
-    margin: 2px;
-    width: calc((100% / 4) - 4px);
-    align-items: center;
-    padding: 2px;
-    box-shadow: 
-        rgba(0, 0, 0, 0.16) 0px 3px 6px, 
-        rgba(0, 0, 0, 0.23) 0px 3px 6px;
-    text-transform: capitalize;
-}
-
-form {
-    margin: 3% 0;
-    display: flex;
-    flex-direction: column;
-}
-
 label,
 input,
 button,
@@ -105,6 +70,14 @@ li,
 p {
     font-size: 1.3rem;
     min-width: 200px;
+}
+
+/* form styles */
+
+form {
+    margin: 3% 0;
+    display: flex;
+    flex-direction: column;
 }
 
 input {
@@ -126,10 +99,48 @@ button {
     transition: 0.3s;
 }
 
+button:hover, 
+button:focus {
+    background: #54436B;
+    color: white;
+}
+
 .form-display {
     margin: 8% 0 1% 0;
     padding: 50px;
     background: #8FBDD3;
+}
+
+/* list styles */
+
+ul, 
+li {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+ul {
+    justify-content: flex-start;
+
+}
+
+li {
+    background: #FFF3E4;
+    margin: 2px;
+    width: calc((100% / 4) - 4px);
+    align-items: center;
+    padding: 2px;
+    box-shadow: 
+        rgba(0, 0, 0, 0.16) 0px 3px 6px, 
+        rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    text-transform: capitalize;
+}
+
+img {
+    height: 50px;
+    width: 50px;
+    object-fit: contain;
+    margin: 0 5px;
 }
 
 .list-heading h2 {
@@ -140,6 +151,8 @@ span {
     text-transform: capitalize;
 }
 
+/* aside and footer styles */
+
 aside p,
 footer p {
     font-size: 0.6rem;
@@ -149,11 +162,7 @@ footer {
     margin: 10px 0;
 }
 
-button:hover, 
-button:focus {
-    background: #54436B;
-    color: white;
-}
+
 
 
 
